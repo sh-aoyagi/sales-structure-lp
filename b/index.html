@@ -1,1 +1,317 @@
-<h1>Bページできた！</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>相談前に見極めるページ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">C</a>
+      <button class="nav-toggle" aria-label="メニュー" id="navToggle">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#immersion">Immersion</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 1. ヒーロー -->
+  <section id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1600&q=80&auto=format')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80&auto=format')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80&auto=format')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-in-up" style="animation-delay:0.2s">Portfolio / 2024</p>
+      <h1 class="hero-headline fade-in-up" style="animation-delay:0.5s">
+        知らないコンサルに、<br>依頼して大丈夫か。
+      </h1>
+      <p class="hero-sub fade-in-up" style="animation-delay:0.8s">
+        展示会、提案書、LP、バナー。<br>
+        期待を下回らないかを、<br>相談前に見極めるためのページです。
+      </p>
+      <a href="https://www.threads.net/@yourusername" target="_blank" rel="noopener" class="hero-cta fade-in-up" style="animation-delay:1.1s">
+        ThreadsでDM相談する
+      </a>
+    </div>
+    <div class="hero-scroll-hint fade-in-up" style="animation-delay:1.5s">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- 2. About -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-headline reveal">
+            フリーランスだから、<br>分断せずに整えられる。
+          </h2>
+          <div class="body-text reveal">
+            <p>展示会、提案書、LP、バナー。<br>これらは本来、ひとつの流れで設計するものです。</p>
+            <p>私はフリーランスとして、<br>営業改善、提案構造、展示会導線、<br>Web表現までを横断して見ています。</p>
+            <p>作るだけではなく、<br>どうすれば相談につながるか。<br>どうすれば現場で回るか。<br>そこまで含めて整えます。</p>
+            <p>組織の中ではこぼれやすい部分を、<br>実務として引き受けます。</p>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80&auto=format" alt="コンサルタント" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. このページの役割 -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal" style="color:var(--accent-light)">Role</div>
+      <h2 class="section-headline reveal" style="color:var(--white)">
+        見極めるための材料を、<br>先に出しています。
+      </h2>
+      <div class="role-grid">
+        <div class="role-item reveal">
+          <span class="role-num">01</span>
+          <p>何ができるのか。</p>
+        </div>
+        <div class="role-item reveal">
+          <span class="role-num">02</span>
+          <p>どこまで頼めるのか。</p>
+        </div>
+        <div class="role-item reveal">
+          <span class="role-num">03</span>
+          <p>見た目と中身の両方が整っているか。</p>
+        </div>
+      </div>
+      <p class="section-sub reveal" style="color:var(--gray-mid)">
+        インタビュー、デモ、審美眼。<br>
+        3つの視点で判断できるようにしています。
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. 相談してよい理由 -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-label reveal">Reason</div>
+      <h2 class="section-headline reveal">
+        話が通じる。現場に落ちる。<br>見た目も外さない。
+      </h2>
+      <div class="reason-grid">
+        <div class="reason-card reveal">
+          <h3>営業の構造を整える</h3>
+          <p>営業の属人化、提案構造、展示会導線。この3つを分けずに見ています。</p>
+        </div>
+        <div class="reason-card reveal">
+          <h3>売上に効く設計をする</h3>
+          <p>見た目だけではなく、売上に効く構造まで設計します。</p>
+        </div>
+        <div class="reason-card reveal">
+          <h3>若手が動ける状態にする</h3>
+          <p>若手でも提案できる状態になります。展示会も、案件化につながる動きに変わります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. インタビュー要約 -->
+  <section id="realisations" class="section section-cream">
+    <div class="container">
+      <div class="section-label reveal">Interview</div>
+      <div class="interview-layout">
+        <div class="interview-image reveal parallax-el">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80&auto=format" alt="インタビュー" loading="lazy" />
+        </div>
+        <div class="interview-text">
+          <h2 class="section-headline reveal">
+            頑張っているのに、<br>売上が伸びない理由があります。
+          </h2>
+          <div class="body-text reveal">
+            <p>営業が弱いのではなく、<br>やり方が揃っていないことが多いです。</p>
+            <p>展示会で名刺を集めても、案件化しない。<br>提案の順番が人によって違う。<br>若手が育たず、できる人に依存する。</p>
+            <p>その状態を、構造から見直します。</p>
+          </div>
+          <a href="#contact" class="text-cta reveal">インタビューを読む →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. デモ制作の考え方 -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal" style="color:var(--accent-light)">Demo</div>
+      <div class="demo-layout">
+        <div class="demo-text">
+          <h2 class="section-headline reveal" style="color:var(--white)">
+            展示会は、名刺を集める場ではなく、<br>関係性を設計する場です。
+          </h2>
+          <div class="body-text reveal" style="color:var(--gray-mid)">
+            <p>製造機器商社を想定したデモでは、<br>ブースの役割そのものを変えました。</p>
+            <p>製品を並べるのではなく、会話が生まれる場にする。<br>椅子2つ、マイク2つ。<br>それだけで、ブースは"登壇の場"になります。</p>
+            <p>既存顧客との関係が更新され、<br>若手も前に出られるようになる。<br>結果として、次の商談につながります。</p>
+          </div>
+          <a href="#contact" class="text-cta reveal" style="color:var(--accent-light)">デモ制作を見る →</a>
+        </div>
+        <div class="demo-image reveal parallax-el">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format" alt="展示会デモ" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. アナザークリエイト -->
+  <section id="immersion" class="section section-light">
+    <div class="container">
+      <div class="section-label reveal">Another Create</div>
+      <h2 class="section-headline reveal">
+        AIで作れる時代に、<br>何を選ぶか。
+      </h2>
+      <p class="section-sub reveal">
+        つくること自体は、難しくなくなりました。<br>
+        だからこそ、何を良しとするかが問われます。
+      </p>
+      <div class="another-grid">
+        <div class="another-card reveal">
+          <div class="another-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&q=80&auto=format" alt="Tシャツ" loading="lazy" />
+          </div>
+          <div class="another-body">
+            <h3>Tシャツ</h3>
+            <p>伝えるより、感じさせる。<br>空気感が伝わるかで判断しています。</p>
+          </div>
+        </div>
+        <div class="another-card reveal">
+          <div class="another-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80&auto=format" alt="音楽" loading="lazy" />
+          </div>
+          <div class="another-body">
+            <h3>音楽</h3>
+            <p>言語化できないものを扱う。<br>感情の動きをどう設計するか。</p>
+          </div>
+        </div>
+        <div class="another-card reveal">
+          <div class="another-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608889335941-32ac5f2041b9?w=600&q=80&auto=format" alt="キャラクター" loading="lazy" />
+          </div>
+          <div class="another-body">
+            <h3>キャラクター</h3>
+            <p>覚えるではなく、関わりたくなる。<br>関係性が生まれるかで考えます。</p>
+          </div>
+        </div>
+        <div class="another-card reveal">
+          <div class="another-img-wrap">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80&auto=format" alt="アニメーション" loading="lazy" />
+          </div>
+          <div class="another-body">
+            <h3>アニメーション</h3>
+            <p>説明を減らし、体感で伝える。<br>動きで理解を補助します。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-center reveal">
+        <a href="#contact" class="text-cta">アナザークリエイトを見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 審美眼の訓練方法 -->
+  <section class="section section-cream">
+    <div class="container container-narrow">
+      <div class="section-label reveal">Aesthetic</div>
+      <h2 class="section-headline reveal">
+        審美眼は、才能ではなく訓練です。
+      </h2>
+      <div class="aesthetic-steps reveal">
+        <div class="aesthetic-step">
+          <span class="step-num">1</span>
+          <p>2つ作る。</p>
+        </div>
+        <div class="aesthetic-step">
+          <span class="step-num">2</span>
+          <p>見てもらう。</p>
+        </div>
+        <div class="aesthetic-step">
+          <span class="step-num">3</span>
+          <p>説明する。</p>
+        </div>
+        <div class="aesthetic-step">
+          <span class="step-num">4</span>
+          <p>より説明できる方を採用する。</p>
+        </div>
+      </div>
+      <div class="body-text reveal aesthetic-body">
+        <p>迷ったら、説明できる方を選ぶ。<br>それが、みんなにわかるデザインです。</p>
+        <p>音楽なら120曲。絵なら120枚。空間なら120か所。<br>量を超えると、判断できるようになります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 相談メニュー -->
+  <section id="contact" class="section section-dark">
+    <div class="container container-narrow">
+      <div class="section-label reveal" style="color:var(--accent-light)">Menu</div>
+      <h2 class="section-headline reveal" style="color:var(--white)">
+        相談してよい範囲を、<br>先に明確にしておきます。
+      </h2>
+      <div class="menu-box reveal">
+        <div class="menu-item">
+          <span class="menu-label">初回相談</span>
+          <span class="menu-value">2時間まで無料</span>
+        </div>
+        <div class="menu-divider"></div>
+        <div class="menu-item">
+          <span class="menu-label">内容</span>
+          <span class="menu-value">現状の整理と改善の方向性</span>
+        </div>
+        <div class="menu-divider"></div>
+        <div class="menu-item">
+          <span class="menu-label">制作・伴走・コンサル</span>
+          <span class="menu-value">別途見積もり</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. 最終CTA -->
+  <section class="section section-light final-cta-section">
+    <div class="container container-narrow">
+      <h2 class="section-headline reveal final-headline">
+        まだ整理できていなくても<br>大丈夫です。
+      </h2>
+      <p class="section-sub reveal">
+        「うちの場合どうなんだろう？」という段階でも問題ありません。<br>
+        展示会、提案書、バナー、LP。<br>
+        どこからでも、一緒に整理します。
+      </p>
+      <a href="https://www.threads.net/@yourusername" target="_blank" rel="noopener" class="main-cta reveal">
+        ThreadsでDM相談する
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
