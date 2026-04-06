@@ -1,0 +1,8 @@
+10.126.201.1 - - [05/Apr/2026 23:49:26] "GET / HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:26] "GET /style.css HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:26] "GET /images/meeting.jpg HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:26] "GET /images/discussion.jpg HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:26] "GET /script.js HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:27] "GET /images/hero.webp HTTP/1.1" 200 -
+10.126.201.1 - - [05/Apr/2026 23:49:27] code 404, message File not found
+10.126.201.1 - - [05/Apr/2026 23:49:27] "GET /favicon.ico HTTP/1.1" 404 -

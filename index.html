@@ -1,81 +1,275 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>営業構造改善サービス</title>
-
-<style>
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-h1 {
-  font-size: 24px;
-}
-.cta {
-  display: block;
-  text-align: center;
-  padding: 15px;
-  background: black;
-  color: white;
-  margin: 20px 0;
-  text-decoration: none;
-  border-radius: 8px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>営業改善コンサルティング | 属人化解消・売上最大化</title>
+    <meta name="description" content="営業の属人化を解消し、再現性のある提案構造と展示会導線を整える。5万円の簡易診断から始める売上改善サービス。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="container">
+    <!-- 1. スクロール進捗バー -->
+    <div id="scroll-progress"></div>
 
-<h1>
-頑張っているのに売上が伸びない。<br>
-その原因、営業の構造かもしれません。
-</h1>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="logo">Sales Structure Lab</div>
+            <nav>
+                <ul>
+                    <li><a href="#problems">課題</a></li>
+                    <li><a href="#solution">解決策</a></li>
+                    <li><a href="#results">実績</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="#cta" class="btn btn-header">簡易診断を相談する</a>
+        </div>
+    </header>
 
-<p>
-営業の属人化、提案のばらつき、展示会後の失速。<br>
-現場の課題を整理し、再現性のある売上導線へ整えます。
-</p>
+    <!-- 1. ファーストビュー -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>営業の属人化、展示会の名刺止まり、提案が安定しない…<br><span>もう「頑張っているのに売上が伸びない」とは言わせません。</span></h1>
+                <p>再現性のある営業導線と提案構造を整え、若手も成果を出せる組織へ。<br>貴社の売上改善を現場から支援する、実践型コンサルティングサービス。</p>
+                <div class="hero-btns">
+                    <a href="#cta" class="btn btn-primary">まずは5万円で簡易診断を相談する</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a href="#" class="cta">簡易診断を相談する</a>
+    <!-- 2. 共感セクション -->
+    <section id="problems" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">こんな状態、ありませんか？</h2>
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <i class="fas fa-user-slash"></i>
+                    <h3>「できる人」に頼りきり</h3>
+                    <p>営業が属人化しており、特定の担当者がいないと案件が進まない。ノウハウが共有されず、再現性がない。</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <i class="fas fa-id-card"></i>
+                    <h3>展示会が名刺集めで終わる</h3>
+                    <p>名刺はたくさん獲得できるが、その後のフォロー導線が曖昧で、実際の商談や売上に繋がっていない。</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <i class="fas fa-seedling"></i>
+                    <h3>若手が育たない</h3>
+                    <p>提案の「型」がないため、若手社員の教育に時間がかかる。個人のセンスに依存した営業から脱却できない。</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>こんな課題ありませんか？</h2>
+    <!-- 3. 課題の本質 -->
+    <section id="essence" class="section bg-light">
+        <div class="container">
+            <div class="essence-content fade-in">
+                <h2 class="section-title">売上低迷の真犯人、それは「構造」にありました</h2>
+                <p>個人のスキルに依存する営業体制は、組織としての成長を阻害します。表面的な施策ではなく、<strong>「売上に効く構造」</strong>を整えることが、安定した成果への近道です。</p>
+            </div>
+        </div>
+    </section>
 
-<ul>
-<li>営業が属人化している</li>
-<li>展示会の成果が安定しない</li>
-<li>若手が育たない</li>
-<li>提案が人によって違う</li>
-</ul>
+    <!-- 4. 解決策の提示 -->
+    <section id="solution" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">売上を「仕組み」で伸ばす、3つのアプローチ</h2>
+            <!-- 7. タブ切替 -->
+            <div class="tabs fade-in">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">属人化解消</button>
+                    <button class="tab-btn" data-tab="tab2">展示会導線</button>
+                    <button class="tab-btn" data-tab="tab3">提案構造化</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                        <h3>営業プロセスを可視化し、再現性を作る</h3>
+                        <p>「なぜ売れたのか」を言語化し、誰でも実行可能なステップに落とし込みます。属人化を排除し、組織全体の営業力を底上げします。</p>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <h3>名刺獲得から商談までの最短ルートを設計</h3>
+                        <p>展示会後のフォローメール、インサイドセールスとの連携、商談化までのステップを最適化。獲得したリードを無駄にしません。</p>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                        <h3>顧客に刺さる「勝てる型」を構築</h3>
+                        <p>バラバラだった提案書やヒアリング項目を整理。顧客の課題に深く刺さる構造的な提案を実現し、受注率を向上させます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>原因は構造です</h2>
+    <!-- 6. 実績・事例 -->
+    <section id="results" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title fade-in">数字が語る、確かな売上改善実績</h2>
+            <div class="results-grid">
+                <div class="result-item fade-in">
+                    <!-- 2. 数字のカウントアップ -->
+                    <div class="counter" data-target="130">0</div>
+                    <div class="counter-unit">%</div>
+                    <p>展示会での名刺獲得数UP</p>
+                </div>
+                <div class="result-item fade-in">
+                    <div class="counter" data-target="25">0</div>
+                    <div class="counter-unit">%</div>
+                    <p>提案からの受注率改善</p>
+                </div>
+                <div class="result-item fade-in">
+                    <div class="counter" data-target="150">0</div>
+                    <div class="counter-unit">%</div>
+                    <p>平均案件規模の拡大</p>
+                </div>
+            </div>
 
-<p>
-営業力ではなく、再現できない仕組みが問題です。<br>
-提案構造と営業導線を整えることで、成果は安定します。
-</p>
+            <!-- 3. Before/After 切替スライダー -->
+            <div class="ba-slider-container fade-in">
+                <h3>改善事例：BtoB製造業 A社様</h3>
+                <div class="ba-slider">
+                    <div class="ba-before">
+                        <img src="images/meeting.jpg" alt="Before">
+                        <div class="ba-label">Before: 属人化した営業</div>
+                    </div>
+                    <div class="ba-after">
+                        <img src="images/discussion.jpg" alt="After">
+                        <div class="ba-label">After: 仕組み化された組織</div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="ba-range" id="ba-range">
+                </div>
+                <p class="ba-desc">個人の勘に頼っていた営業から、データと構造に基づいたチーム営業へ転換。若手の早期戦力化に成功しました。</p>
+            </div>
+        </div>
+    </section>
 
-<h2>実績</h2>
+    <!-- 8. 実績カードのスライダー -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">幅広い業界での支援実績</h2>
+            <div class="slider-wrapper fade-in">
+                <div class="card-slider" id="card-slider">
+                    <div class="card">IT・SaaS / リード獲得効率 1.8倍</div>
+                    <div class="card">専門商社 / 提案書標準化で受注率 15%増</div>
+                    <div class="card">広告・メディア / 属人化解消で売上 120%達成</div>
+                    <div class="card">コンサルティング / 展示会導線改善で商談数 2倍</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>
-展示会導線改善で名刺獲得130%<br>
-提案構造の見直しで売上改善
-</p>
+    <!-- 7. 進め方・診断の流れ -->
+    <section id="process" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">売上改善への第一歩、まずは「簡易診断」から</h2>
+            <div class="process-steps">
+                <div class="step fade-in">
+                    <div class="step-num">01</div>
+                    <h3>ヒアリング</h3>
+                    <p>現在の営業活動、展示会の運用状況、課題感を詳しく伺います。</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-num">02</div>
+                    <h3>現状分析・診断</h3>
+                    <p>提供資料やデータを元に、売上を阻害している構造的要因を特定します。</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-num">03</div>
+                    <h3>改善ロードマップ提示</h3>
+                    <p>診断結果に基づき、優先順位をつけた具体的な改善案をご提案します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a href="#" class="cta">問い合わせる</a>
+    <!-- 10. FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">よくあるご質問</h2>
+            <!-- 4. FAQアコーディオン -->
+            <div class="faq-container fade-in">
+                <div class="faq-item">
+                    <div class="faq-question">相談だけでも可能ですか？ <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">はい、もちろんです。まだ課題が明確でなくても、まずは貴社の状況をお聞かせください。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">課題がまだ曖昧でも相談できますか？ <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">はい、問題ありません。多くの企業様が、漠然とした「売上が伸びない」という課題感からご相談にいらっしゃいます。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">簡易診断では何がわかりますか？ <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">貴社の営業プロセス、提案構造、展示会導線などを評価し、売上低迷の根本原因と改善ポイントを明確にします。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">しつこい営業はありませんか？ <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">ご安心ください。弊社は現場の課題に寄り添うことを重視しており、強引な営業は一切行いません。</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- 11. 最終CTA & 9. 入力補助付きフォーム -->
+    <section id="cta" class="section bg-primary text-white">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>貴社の売上改善、今すぐ始めませんか？</h2>
+                <p>まずは5万円の簡易診断で、未来を変える第一歩を。</p>
+                <form id="diagnosis-form" class="diagnosis-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" placeholder="例：山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">貴社名</label>
+                        <input type="text" id="company" placeholder="例：株式会社〇〇" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">現在の最も大きな課題</label>
+                        <select id="issue">
+                            <option value="">選択してください</option>
+                            <option value="1">営業の属人化</option>
+                            <option value="2">展示会からの成約率が低い</option>
+                            <option value="3">若手育成が進まない</option>
+                            <option value="4">その他</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-white">簡易診断を相談する</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- 5. 追従CTAボタン -->
+    <div id="sticky-cta" class="sticky-cta">
+        <a href="#cta" class="btn btn-primary">簡易診断を相談する</a>
+    </div>
+
+    <!-- 10. 離脱前の軽いポップアップCTA -->
+    <div id="exit-popup" class="exit-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>お帰りですか？</h3>
+            <p>最後に「売上改善のチェックリスト」を無料で受け取りませんか？</p>
+            <a href="#cta" class="btn btn-primary">チェックリストをもらう</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sales Structure Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
